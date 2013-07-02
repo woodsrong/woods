@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width" />
+		<title>connection</title>
+	</head>
+	<body>
+    <script>
+        var connection = navigator.connection || {type: 0};
+        var type = connection.type;
+        var networkInfo = {
+          0: 'known',
+          1: 'ethernet',
+          2: 'wifi',
+          3: '2g',
+          4: '3g',
+        };
+        document.write('navigator.connection： ' + networkInfo[type]);
+	</script>
+	</body>
+</html>
